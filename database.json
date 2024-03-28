@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Chocolate Donut",
+        "image_url": "https://tornadoughalli.com/wp-content/uploads/2020/03/CHOCOLATE-GLAZED-DONUTS-12-500x500.jpg",
+        "description": "A delicious chocolate glazed donut topped with sprinkles."
+    },
+    {
+        "name": "Strawberry Donut",
+        "image_url": "https://handletheheat.com/wp-content/uploads/2016/07/Baked-Strawberry-Donuts-Square-500x500.jpg",
+        "description": "A strawberry-flavored donut with pink icing and sugar crystals."
+    },
+    {
+        "name": "Vanilla Donut",
+        "image_url": "https://www.errenskitchen.com/wp-content/uploads/2020/01/Baked-Vanilla-Donuts-1-4-500x500.jpg",
+        "description": "A classic vanilla glazed donut with a soft, fluffy texture."
+    }
+]

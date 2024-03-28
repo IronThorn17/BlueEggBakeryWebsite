@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Egg Bakery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Blue Egg Bakery</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Catering</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="database-container">
+        {% for database in database %}
+        <div class="database">
+            <h2>{{ database.name }}</h2>
+            <img src="{{ database.image_url }}" alt="{{ database.name }}">
+            <p>{{ database.description }}</p>
+        </div>
+        {% endfor %}
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Donut Store</p>
+    </footer>
+</body>
+</html>
