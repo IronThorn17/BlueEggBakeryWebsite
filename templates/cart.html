@@ -24,18 +24,6 @@
             </nav>
             </div>
         </header>
-        
-        <section class="main-content">
-            <!-- Display product cards for each category -->
-            {% for category, product in category_products.items() %}
-            <div class="database">
-                <a href="/category/{{ category }}" style="text-decoration:none">
-                    <h2>{{ category }}</h2>
-                    <img src="{{ product.image_url }}" alt="{{ product.name }}">
-                </a>
-            </div>
-            {% endfor %}
-        </section>
     </div>
     <footer>
         <div class="footer-content">

@@ -1,17 +1,50 @@
 [
     {
+        "id": 1,
         "name": "Chocolate Donut",
+        "category": "Donuts",
         "image_url": "https://tornadoughalli.com/wp-content/uploads/2020/03/CHOCOLATE-GLAZED-DONUTS-12-500x500.jpg",
-        "description": "A delicious chocolate glazed donut topped with sprinkles."
+        "description": "A delicious chocolate glazed donut topped with sprinkles.",
+        "price": 2.50
     },
     {
+        "id": 2,
         "name": "Strawberry Donut",
+        "category": "Donuts",
         "image_url": "https://handletheheat.com/wp-content/uploads/2016/07/Baked-Strawberry-Donuts-Square-500x500.jpg",
-        "description": "A strawberry-flavored donut with pink icing and sugar crystals."
+        "description": "A strawberry-flavored donut with pink icing and sugar crystals.",
+        "price": 3.00
     },
     {
+        "id": 3,
         "name": "Vanilla Donut",
+        "category": "Donuts",
         "image_url": "https://www.errenskitchen.com/wp-content/uploads/2020/01/Baked-Vanilla-Donuts-1-4-500x500.jpg",
-        "description": "A classic vanilla glazed donut with a soft, fluffy texture."
+        "description": "A classic vanilla glazed donut with a soft, fluffy texture.",
+        "price": 2.00
+    },
+    {
+        "id": 4,
+        "name": "French Baguette",
+        "category": "Breads",
+        "image_url": "https://tasteofartisan.com/wp-content/uploads/2019/05/French-baguette-recipe-4-500x500.jpg",
+        "description": "A classic French baguette with a crispy crust and tender interior.",
+        "price": 3.00
+    },
+    {
+        "id": 5,
+        "name": "Chocolate Chip Cookie",
+        "category": "Cookies",
+        "image_url": "https://kirbiecravings.com/wp-content/uploads/2019/05/keto-chocolate-chip-cookies-2-500x500.jpg",
+        "description": "A chewy chocolate chip cookie loaded with chocolate chips.",
+        "price": 1.50
+    },
+    {
+        "id": 6,
+        "name": "Lemon Bars",
+        "category": "Bars",
+        "image_url": "https://www.thechunkychef.com/wp-content/uploads/2022/07/Creamy-Lemon-Bars-recipe-card-500x500.jpg",
+        "description": "Tangy and sweet lemon bars with a buttery shortbread crust.",
+        "price": 2.75
     }
 ]

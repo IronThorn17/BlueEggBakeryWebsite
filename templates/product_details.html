@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Egg Bakery</title>
+    <title>Product Details</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="../static/script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -25,17 +26,21 @@
             </div>
         </header>
         
-        <section class="main-content">
-            <!-- Display product cards for each category -->
-            {% for category, product in category_products.items() %}
-            <div class="database">
-                <a href="/category/{{ category }}" style="text-decoration:none">
-                    <h2>{{ category }}</h2>
-                    <img src="{{ product.image_url }}" alt="{{ product.name }}">
-                </a>
+        <div class="product-page">
+            <div>
+                <img src="{{ product.image_url }}" alt="{{ product.name }}">
             </div>
-            {% endfor %}
-        </section>
+            <div class="product-details">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.description }}</p>
+                <p>Price: ${{ '%.2f' | format(product.price) }}</p>
+            <div class="quantity-control">
+                <button class="decrement">&#9664;</button>
+                <input type="number" id="quantity" name="quantity" value="0" min="0">
+                <button class="increment">&#9654;</button>
+            </div>
+            <button class="add-to-cart">Add To Cart</button>
+        </div>
     </div>
     <footer>
         <div class="footer-content">
