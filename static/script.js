@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const productIdInput = document.getElementById('productId');
     const quantityInput = document.getElementById('quantity');
     const decrementButton = document.querySelector('.decrement');
     const incrementButton = document.querySelector('.increment');
@@ -27,13 +28,33 @@ document.addEventListener('DOMContentLoaded', function() {
         // Prevent the default form submission
         event.preventDefault();
         
-        // Retrieve the quantity value when the "Add to Cart" button is clicked
+        // Retrieve the product ID and quantity values
+        const productId = parseInt(productIdInput.value);
         const quantity = parseInt(quantityInput.value);
         
         // Perform any additional actions with the quantity value, such as adding the product to the cart
         if (quantity >= 1) {
             // Send data to server for adding to cart
-            // For now, you can log a message indicating the product and quantity added to the cart
+            // Perform an AJAX request to the server to add the product to the cart
+            fetch('/add-to-cart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    product_id: productId,
+                    quantity: quantity
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Log the response message
+                console.log(data.message);
+            })
+            .catch(error => {
+                // Log any errors that occur during the request
+                console.error('Error:', error);
+            });
             console.log('Product added to cart:', quantity);
         }
     });

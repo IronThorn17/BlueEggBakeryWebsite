@@ -5,7 +5,7 @@
         "category": "Donuts",
         "image_url": "https://tornadoughalli.com/wp-content/uploads/2020/03/CHOCOLATE-GLAZED-DONUTS-12-500x500.jpg",
         "description": "A delicious chocolate glazed donut topped with sprinkles.",
-        "price": 2.50
+        "price": 1.75
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "category": "Donuts",
         "image_url": "https://handletheheat.com/wp-content/uploads/2016/07/Baked-Strawberry-Donuts-Square-500x500.jpg",
         "description": "A strawberry-flavored donut with pink icing and sugar crystals.",
-        "price": 3.00
+        "price": 1.75
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "category": "Donuts",
         "image_url": "https://www.errenskitchen.com/wp-content/uploads/2020/01/Baked-Vanilla-Donuts-1-4-500x500.jpg",
         "description": "A classic vanilla glazed donut with a soft, fluffy texture.",
-        "price": 2.00
+        "price": 1.75
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@
         "category": "Cookies",
         "image_url": "https://kirbiecravings.com/wp-content/uploads/2019/05/keto-chocolate-chip-cookies-2-500x500.jpg",
         "description": "A chewy chocolate chip cookie loaded with chocolate chips.",
-        "price": 1.50
+        "price": 1.25
     },
     {
         "id": 6,
@@ -45,6 +45,126 @@
         "category": "Bars",
         "image_url": "https://www.thechunkychef.com/wp-content/uploads/2022/07/Creamy-Lemon-Bars-recipe-card-500x500.jpg",
         "description": "Tangy and sweet lemon bars with a buttery shortbread crust.",
-        "price": 2.75
-    }
+        "price": 2.00
+    },
+    {
+        "id": 7,
+        "name": "Glazed Donut",
+        "category": "Donuts",
+        "image_url": "https://ashleemarie.com/wp-content/uploads/2019/09/how-to-make-a-homemade-donut-500x500.jpg",
+        "description": "Standard Glazed Donut, what can go wrong?",
+        "price": 1.75
+    },
+    {
+        "id": 8,
+        "name": "Red Velvet Donut",
+        "category": "Donuts",
+        "image_url": "https://saltandbaker.com/wp-content/uploads/2021/12/red-velvet-donuts-recipe-square-500x500.jpg",
+        "description": "Red Velvet Donuts for when your wedding needs to be impersonal",
+        "price": 1.75
+    },
+    {
+        "id": 9,
+        "name": "Baked Matcha Donut with White Chocolate Glaze",
+        "category": "Donuts",
+        "image_url": "https://worldlytreat.com/wp-content/uploads/2022/09/Baked-Matcha-Donut-with-White-Chocolate-Glaze-1-2-500x500.jpg",
+        "description": "Looks like mint... I don't know about this one...",
+        "price": 1.75
+    },
+    {
+        "id": 10,
+        "name": "Sourdough Bread",
+        "category": "Breads",
+        "image_url": "https://grainsinsmallplaces.net/wp-content/uploads/2023/02/Sourdough-Bread-From-Fresh-Milled-Flour-500x500.png",
+        "description": "Something about it being called 'Sour' freaks me out...",
+        "price": 3.00
+    },
+    {
+        "id": 11,
+        "name": "Sourdough Pumpernickel Bread",
+        "category": "Breads",
+        "image_url": "https://www.baking-sense.com/wp-content/uploads/2017/02/sourdough-pumpernickel-14a-500x500.jpg",
+        "description": "Pumpernickel!... What an odd word...",
+        "price": 3.00
+    },
+    {
+        "id": 12,
+        "name": "New York Bagel",
+        "category": "Breads",
+        "image_url": "https://bakingamoment.com/wp-content/uploads/2020/06/IMG_8813-bagel-recipe-500x500.jpg",
+        "description": "Perfectly Round!",
+        "price": 3.00
+    },
+    {
+        "id": 13,
+        "name": "Frosted Sugar Cookie",
+        "category": "Cookies",
+        "image_url": "https://sugarspunrun.com/wp-content/uploads/2018/02/Frosted-Sugar-Cookies-1-of-1-1-500x500.jpg",
+        "description": "A chewy chocolate chip cookie loaded with chocolate chips.",
+        "price": 1.25
+    },
+    {
+        "id": 14,
+        "name": "Snickerdoodle",
+        "category": "Cookies",
+        "image_url": "https://cookiesfordays.com/wp-content/uploads/2023/06/insomnia-snickerdoodle-ft-500x500.jpg",
+        "description": "Cinnamon-sugar coated cookie that's as fun to say as it is to eat.",
+        "price": 1.50
+    },
+    {
+        "id": 15,
+        "name": "Oatmeal Raisin Cookie",
+        "category": "Cookies",
+        "image_url": "https://amycakesbakes.com/wp-content/uploads/2021/12/Bakery-Style-Soft-and-Chewy-Oatmeal-Raisin-Cookie-by-Amycakes-Bakes-500x500.jpg",
+        "description": "A wholesome cookie with oats and juicy raisins, perfect for an afternoon snack.",
+        "price": 1.50
+    },
+    {
+        "id": 16,
+        "name": "Peanut Butter Cookies",
+        "category": "Cookies",
+        "image_url": "https://sugarspunrun.com/wp-content/uploads/2023/02/the-best-peanut-butter-cookie-recipe-1-of-1-500x500.jpg",
+        "description": "Rich and nutty cookies made with peanut butter, perfect for peanut lovers.",
+        "price": 1.50
+    },
+    {
+        "id": 17,
+        "name": "Coconut Macaroons",
+        "category": "Cookies",
+        "image_url": "https://www.twopeasandtheirpod.com/wp-content/uploads/2020/03/coconut-macaroons-4-500x500.jpg",
+        "description": "Chewy and sweet cookies made with shredded coconut, perfect for coconut enthusiasts.",
+        "price": 1.75
+    },
+    {
+        "id": 18,
+        "name": "Brownies",
+        "category": "Bars",
+        "image_url": "https://lifemadesimplebakes.com/wp-content/uploads/2014/06/brownies-resize-7-500x500.jpg",
+        "description": "Rich and fudgy chocolate bars with a melt-in-your-mouth texture, perfect for chocolate lovers.",
+        "price": 2.00
+    },
+    {
+        "id": 19,
+        "name": "Blondies",
+        "category": "Bars",
+        "image_url": "https://sugarspunrun.com/wp-content/uploads/2018/10/best-blondie-recipe-2-of-8-2-500x500.jpg",
+        "description": "Buttery and chewy bars with a caramelized flavor, studded with white chocolate chips or nuts.",
+        "price": 1.75
+    },
+    {
+        "id": 20,
+        "name": "Seven Layer Bars",
+        "category": "Bars",
+        "image_url": "https://www.lucismorsels.com/wp-content/uploads/2013/05/SQ-old-fashioned-7-layer-bars.jpg",
+        "description": "Indulgent bars with layers of graham cracker crumbs, chocolate chips, coconut, nuts, and condensed milk.",
+        "price": 2.25
+    },
+    {
+        "id": 21,
+        "name": "Pecan Pie Bars",
+        "category": "Bars",
+        "image_url": "https://www.justataste.com/wp-content/uploads/2011/11/pecan-pie-bars-2023-500x500.jpg",
+        "description": "All the flavors of pecan pie in convenient bar form, with a buttery shortbread crust and a gooey pecan filling.",
+        "price": 2.50
+    }    
 ]

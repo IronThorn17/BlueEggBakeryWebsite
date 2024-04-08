@@ -60,12 +60,6 @@ main {
     padding: 2rem;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - 55px);
-}
-
 section {
     margin-bottom: 2rem;
 }
@@ -83,16 +77,16 @@ section > h2 {
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .database {
     background-color: var(--fifth-color);
     border-radius:  var(--border-radius);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: var(--padding-large);
     margin: 10px 10px;
-    width: calc(50% - 20px);
+    max-width: min(450px, 50% - 20px);
 }
 
 .database a.product-link {
@@ -135,6 +129,7 @@ section > h2 {
 
 .product-page img {
     border-radius: var(--border-radius);
+    max-width: min(500px, 90% - 10px);
 }
 
 .product-page p {
@@ -144,6 +139,47 @@ section > h2 {
 .product-details {
     flex: 2;
     padding-left: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--fifth-color);
+    border-radius:  var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: var(--padding-large);
+    margin: 10px 10px;
+    max-width: min(500px, 25% - 20px);
+}
+
+.cart-item img {
+    width: 95%;
+}
+
+.cart-item h2 {
+    text-align: center;
+    font-size: medium;
+}
+
+.cart-item p {
+    text-align: left;
+    font-size: small;
+}
+
+.cart-item button {
+    font-size: small;
+    color: var(--fifth-color);
+    border: none;
+    background-color: var(--fourth-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding-small);
 }
 
 .quantity-control {
@@ -188,7 +224,19 @@ section > h2 {
     background-color: var(--fourth-color);
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 10rem;
+}
+
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: var(--first-color);
     color: var(--fifth-color);
     padding: 1rem;

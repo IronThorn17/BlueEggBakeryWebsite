@@ -8,59 +8,63 @@
     <script src="../static/script.js" defer></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div>
-                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/378759748_1021053258866265_9190996398925317582_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3XFeivEGrHIAb4caBmo&_nc_ht=scontent-msp1-1.xx&oh=00_AfA606C-tPeic21oeVtzoqlfvGpo-RHR4PUFwW6yZwrFGA&oe=6618DA6C">
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <div>
+                    <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/378759748_1021053258866265_9190996398925317582_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3XFeivEGrHIAb4caBmo&_nc_ht=scontent-msp1-1.xx&oh=00_AfA606C-tPeic21oeVtzoqlfvGpo-RHR4PUFwW6yZwrFGA&oe=6618DA6C">
+                </div>
+                <div>
+                    <h1>Blue Egg Bakery</h1>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="{{ url_for('index') }}">Menu</a></li>
+                        <li><a href="{{ url_for('cart') }}">Cart</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+            
+            <div class="product-page">
+                <div>
+                    <img src="{{ product.image_url }}" alt="{{ product.name }}">
+                </div>
+                <div class="product-details">
+                    <h2>{{ product.name }}</h2>
+                    <p>{{ product.description }}</p>
+                    <p>Price: ${{ '%.2f' | format(product.price) }}</p>
+    
+                    <input type="hidden" id="productId" value="{{ product.id }}">
+                <div class="quantity-control">
+                    <button class="decrement">&#9664;</button>
+                    <input type="number" id="quantity" name="quantity" value="0" min="0">
+                    <button class="increment">&#9654;</button>
+                </div>
+                <button class="add-to-cart">Add To Cart</button>
             </div>
-            <div>
-                <h1>Blue Egg Bakery</h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="{{ url_for('index') }}">Home</a></li>
-                    <li><a href="{{ url_for('index') }}">Menu</a></li>
-                    <li><a href="{{ url_for('cart') }}">Cart</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
-            </div>
-        </header>
-        
-        <div class="product-page">
-            <div>
-                <img src="{{ product.image_url }}" alt="{{ product.name }}">
-            </div>
-            <div class="product-details">
-                <h2>{{ product.name }}</h2>
-                <p>{{ product.description }}</p>
-                <p>Price: ${{ '%.2f' | format(product.price) }}</p>
-            <div class="quantity-control">
-                <button class="decrement">&#9664;</button>
-                <input type="number" id="quantity" name="quantity" value="0" min="0">
-                <button class="increment">&#9654;</button>
-            </div>
-            <button class="add-to-cart">Add To Cart</button>
         </div>
+        <footer>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>Contact Us:</p>
+                    <p>blueeggbakery@gmail.com</p>
+                    <p>(763)441-1911</p>
+                    <p>713 Main St NW, Elk River, MN 55330</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/BlueEggBakery/"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="about.html" style="text-decoration:none">About Us</a></li>
+                        <li><a href="jobs.html" style="text-decoration:none">Jobs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024 Blue Egg Bakery</p>
+        </footer>
     </div>
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <p>Contact Us:</p>
-                <p>blueeggbakery@gmail.com</p>
-                <p>(763)441-1911</p>
-                <p>713 Main St NW, Elk River, MN 55330</p>
-            </div>
-            <div class="social-media">
-                <a href="https://www.facebook.com/BlueEggBakery/"><i class="fab fa-facebook"></i></a>
-            </div>
-            <div class="quick-links">
-                <ul>
-                    <li><a href="about.html" style="text-decoration:none">About Us</a></li>
-                    <li><a href="jobs.html" style="text-decoration:none">Jobs</a></li>
-                </ul>
-            </div>
-        </div>
-        <p>&copy; 2024 Blue Egg Bakery</p>
-    </footer>
 </body>
 </html>
